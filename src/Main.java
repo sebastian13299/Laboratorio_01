@@ -1,7 +1,17 @@
+
+import javax.swing.*;
+
 public class Main {
     public static void main(String[] args) {
-        int prueba=1234;
-        System.out.println("prueba 2");
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                JFrame frame = new Contenedores();
+                frame.setSize(300,300);
+                frame.setVisible(true);
+                frame.setTitle("ExamplePack");
 
+            }
+        });
     }
 }
