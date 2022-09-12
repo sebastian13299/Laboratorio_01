@@ -7,7 +7,7 @@ public class Main {
             @Override
             public void run() {
                 JFrame frame = new Contenedores();
-                frame.setSize(300,300);
+                frame.setSize(600,600);
                 frame.setVisible(true);
                 frame.setTitle("ExamplePack");
 
