@@ -27,7 +27,17 @@ public class VentanaPrincipal extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                SwingUtilities.invokeLater(new Runnable() {
+                    @Override
+                    public void run() {
+                        JFrame frame = new Borderlayout();
+                        frame.setSize(500,500);
+                        frame.setVisible(true);
+                        frame.setLocationRelativeTo(null);
+                        frame.setTitle("Border layout example");
 
+                    }
+                });
 
 
             }
@@ -44,6 +54,7 @@ public class VentanaPrincipal extends JFrame {
                         JFrame frame = new Gridlayout();
                         frame.setSize(500,500);
                         frame.setVisible(true);
+                        frame.setLocationRelativeTo(null);
                         frame.setTitle("Grid layout example");
 
                     }
