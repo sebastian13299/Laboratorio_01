@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 
 public class Contenedores extends JFrame {
 
-
+    //prueba
     private JPanel panel1;
     private JButton salirButton;
     private JButton borderLayoutButton;
