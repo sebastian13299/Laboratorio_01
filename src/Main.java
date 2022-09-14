@@ -1,5 +1,5 @@
 
-import ExamplePack.Contenedores;
+import ExamplePack.VentanaPrincipal;
 
 import javax.swing.*;
 
@@ -8,9 +8,10 @@ public class Main {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                JFrame frame = new Contenedores();
+                JFrame frame = new VentanaPrincipal();
                 frame.setSize(600,600);
                 frame.setVisible(true);
+                frame.setLocationRelativeTo(null);
                 frame.setTitle("ExamplePack");
 
             }
