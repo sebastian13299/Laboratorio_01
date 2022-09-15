@@ -1,11 +1,12 @@
+package ExamplePack;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Contenedores extends JFrame {
+public class VentanaPrincipal extends JFrame {
 
-
+    //prueba
     private JPanel panel1;
     private JButton salirButton;
     private JButton borderLayoutButton;
@@ -16,16 +17,27 @@ public class Contenedores extends JFrame {
     private JButton cardLayoutButton;
 
 
-    public Contenedores(){
+    public VentanaPrincipal(){
         setContentPane(panel1);
 
         //SETEAR ACCIONES AL BOTON borderLayout
+
 
         borderLayoutButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                SwingUtilities.invokeLater(new Runnable() {
+                    @Override
+                    public void run() {
+                        JFrame frame = new Borderlayout();
+                        frame.setSize(500,500);
+                        frame.setVisible(true);
+                        frame.setLocationRelativeTo(null);
+                        frame.setTitle("Border layout example");
 
+                    }
+                });
 
 
             }
@@ -36,7 +48,17 @@ public class Contenedores extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                //DESARROLLAR
+                SwingUtilities.invokeLater(new Runnable() {
+                    @Override
+                    public void run() {
+                        JFrame frame = new Gridlayout();
+                        frame.setSize(500,500);
+                        frame.setVisible(true);
+                        frame.setLocationRelativeTo(null);
+                        frame.setTitle("Grid layout example");
+
+                    }
+                });
 
 
             }
