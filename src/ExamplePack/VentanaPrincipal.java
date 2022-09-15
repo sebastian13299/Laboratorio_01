@@ -91,7 +91,12 @@ public class VentanaPrincipal extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                //DESARROLLAR
+                JFrame cardFrame = new CardLayout();
+                cardFrame.setSize(600,600);
+                cardFrame.setLocationRelativeTo(null);
+                cardFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                cardFrame.setTitle("Card Layout Example");
+                cardFrame.setVisible(true);
 
 
             }
