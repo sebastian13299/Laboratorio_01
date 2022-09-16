@@ -15,6 +15,7 @@ public class VentanaPrincipal extends JFrame {
     private JButton flowLayoutButton;
     private JButton gridBagLayoutButton;
     private JButton cardLayoutButton;
+    private JButton acercaDeButton;
 
 
     public VentanaPrincipal(){
@@ -126,9 +127,12 @@ public class VentanaPrincipal extends JFrame {
         });
 
 
-
-
-
+        acercaDeButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(null, "Estos son los Integrantes del Grupor \n Sebastian Barahona Valverde \n Leonardo Sanchez \n Jose Pablo");
+            }
+        });
     }
 
 
