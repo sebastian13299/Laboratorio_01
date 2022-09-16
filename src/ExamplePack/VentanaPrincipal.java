@@ -13,7 +13,7 @@ public class VentanaPrincipal extends JFrame {
     private JLabel tittle;
     private JButton gridLayoutButton;
     private JButton flowLayoutButton;
-    private JButton gridBabLayoutButton;
+    private JButton gridBagLayoutButton;
     private JButton cardLayoutButton;
 
 
@@ -68,21 +68,31 @@ public class VentanaPrincipal extends JFrame {
         flowLayoutButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
-                //DESARROLLAR
-
-
+                SwingUtilities.invokeLater(new Runnable() {
+                    @Override
+                    public void run() {
+                        JFrame layoutFrame = new FlowLayout();
+                        layoutFrame.setSize(600, 600);
+                        layoutFrame.setTitle("Flow Layout Example");
+                        layoutFrame.setVisible(true);
+                    }
+                });
             }
         });
 
         //SETEAR ACCIONES AL BOTON gridBabLayout
-        gridBabLayoutButton.addActionListener(new ActionListener() {
+        gridBagLayoutButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
-                //DESARROLLAR
-
-
+                SwingUtilities.invokeLater(new Runnable() {
+                    @Override
+                    public void run() {
+                        JFrame gridBagLayout = new GridBagLayout();
+                        gridBagLayout.setSize(600, 600);
+                        gridBagLayout.setTitle("Grid Bag Layout Example");
+                        gridBagLayout.setVisible(true);
+                    }
+                });
             }
         });
 
