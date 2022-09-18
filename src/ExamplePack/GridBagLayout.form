@@ -42,7 +42,7 @@
         <properties/>
         <border type="none"/>
         <children>
-          <component id="db84b" class="javax.swing.JTextPane" binding="loremIpsumDolorSitTextPane" default-binding="true">
+          <component id="db84b" class="javax.swing.JTextPane" binding="loremIpsumTextPane">
             <constraints>
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
                 <preferred-size width="150" height="50"/>
@@ -50,7 +50,7 @@
               <gridbag weightx="0.0" weighty="0.0"/>
             </constraints>
             <properties>
-              <text value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis ex in orci mattis ullamcorper in in mauris. Integer dolor dui, vulputate quis tempor ultrices, cursus a erat. Proin fringilla varius lacinia."/>
+              <text value="Lorem ipsum dolor sit amet, consectetur adipiscing elit."/>
             </properties>
           </component>
         </children>
@@ -101,7 +101,58 @@
           <gridbag weightx="0.0" weighty="0.0"/>
         </constraints>
         <properties>
-          <text value="Label"/>
+          <text value="Scrollbar value: 0"/>
+        </properties>
+      </component>
+      <component id="a5171" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Combobox Value:"/>
+        </properties>
+      </component>
+      <component id="8c24b" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Text Pane Text: "/>
+        </properties>
+      </component>
+      <component id="bba29" class="javax.swing.JButton" binding="showPaneTextButton" default-binding="true">
+        <constraints>
+          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Show Pane Text"/>
+        </properties>
+      </component>
+      <vspacer id="1b9a8">
+        <constraints>
+          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+      </vspacer>
+      <component id="b0753" class="javax.swing.JLabel" binding="textPaneLabel">
+        <constraints>
+          <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="d3e20" class="javax.swing.JLabel" binding="comboBoxValue">
+        <constraints>
+          <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value=""/>
         </properties>
       </component>
     </children>
