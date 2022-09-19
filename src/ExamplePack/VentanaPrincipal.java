@@ -103,7 +103,7 @@ public class VentanaPrincipal extends JFrame {
             public void actionPerformed(ActionEvent e) {
 
                 JFrame cardFrame = new CardLayout();
-                cardFrame.setSize(600,600);
+                cardFrame.setSize(800,800);
                 cardFrame.setLocationRelativeTo(null);
                 cardFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
                 cardFrame.setTitle("Card Layout Example");
@@ -130,7 +130,7 @@ public class VentanaPrincipal extends JFrame {
         acercaDeButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(null, "Estos son los Integrantes del Grupor \n Sebastian Barahona Valverde \n Leonardo Sanchez \n Jose Pablo");
+                JOptionPane.showMessageDialog(null, "Estos son los Integrantes del Grupo: \n Sebastián Barahona Valverde \n Leonardo Sánchez \n Jose Pablo Díaz");
             }
         });
     }
