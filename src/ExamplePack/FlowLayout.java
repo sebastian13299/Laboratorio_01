@@ -37,6 +37,7 @@ public class FlowLayout extends JFrame{
     public FlowLayout() {
 
         setContentPane(mainFlowLayoutPanel);
+       // setLayout(new java.awt.FlowLayout());
         menuBar = new JMenuBar();
         menu = new JMenu("Options Menu");
         menuItem1 = new JMenuItem("Option 1");
